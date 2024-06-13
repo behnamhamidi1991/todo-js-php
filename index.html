@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Todo Application</title>
+</head>
+<body>
+    <section id="todo-container">
+        <h2>Welcome to todo-task organizer</h2>
+        <p>This app helps you organize your daily tasks</p>
+
+        <form id="form">
+            <input id="formInput" type="text" placeholder="Add a new task ...">
+            <button id="formBtn">
+                <i class='bx bx-plus-circle' ></i>
+            </button>
+        </form>
+
+        <ul id="list">
+            <li id="listItem" class="listItem">
+                <p class="listP">This is a new task</p>
+
+                <div class="btnContainer">
+                    <button class="deleteBtn">
+                        <i class='bx bx-trash' ></i>
+                    </button>
+                    <button class="editBtn">
+                        <i class='bx bx-edit' ></i>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
