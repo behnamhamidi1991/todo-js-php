@@ -16,3 +16,65 @@ body {
     padding: 30px;
 }
 
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+#list .listItem {
+    display: flex;
+    width: 100%;
+    background-color: rgb(19, 64, 141);
+    justify-content: space-between;
+    padding: 15px 18px;
+    border-radius: 5px;
+}
+
+.listP {
+    padding-right: 30px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.btnContainer {
+    display: flex;
+    gap: 4px;
+}
+
+.btnContainer button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnContainer button i {
+    font-size: 17px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#formInput {
+    width: 90%;
+    border: none;
+    padding: 9px;
+    margin-top: 15px;
+    outline: none;
+    border-radius: 4px;
+}
+
+#formBtn {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
