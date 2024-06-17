@@ -1,23 +1,17 @@
-const todoForm = document.querySelector('#todo-form');
-const formInput = document.querySelector('#formInput');
+const itemForm = document.getElementById("form");
+const itemInput = document.getElementById("formInput");
+const itemList = document.getElementById("itemList");
 
-function addItem (e) {
-    e.preventDefault();
+function addItem(e) {
+  e.preventDefault();
 
-    const newItem = formInput.value;
+  const newItem = itemInput.value;
 
-    // Create an LI
-
-
-    // Create a P and Div
-
-
-    // Create Buttons
-    
+  if (newItem === "") {
+    alert("You must add a task!");
+    return;
+  }
 }
 
-
-
-
 // Event Listeners
-todoForm.addEventListener('submit', addItem)
+itemForm.addEventListener("submit", addItem);
