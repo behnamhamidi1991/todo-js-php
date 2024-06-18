@@ -22,7 +22,28 @@ function addItem(e) {
 
   itemList.appendChild(li);
   itemInput.value = '';
+
+  saveItemsToLocalStorage();
 }
+
+// ADD ITEMS TO LOCALSTORAGE
+function saveItemsToLocalStorage () {
+  const items = Array.from(itemList.children).map(li => li.textContent);
+  localStorage.setItem("items", JSON.stringify(items));
+}
+
+function loadItemsFromLocalStorage() {
+  const storedItems = JSON.parse(localStorage.getItem("items")) || [];
+  storedItems.forEach(item => {
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode(item));
+    const button = createBtn("deleteBtn");
+    li.appendChild(button);
+    itemList.appendChild(li);
+  })
+}
+
+loadItemsFromLocalStorage();
 
 function createBtn (classes) {
   const button = document.createElement('button');
