@@ -74,3 +74,14 @@ header h1 {
 #itemList li button:hover {
   color: red;
 }
+
+.clearAll {
+  margin: 10px;
+  border: none;
+  padding: 5px;
+  background-color: rgb(55, 96, 230);
+  color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
