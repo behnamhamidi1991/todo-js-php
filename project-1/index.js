@@ -24,6 +24,7 @@ function addItem(e) {
   itemInput.value = '';
 
   saveItemsToLocalStorage();
+  checkUI();
 }
 
 // ADD ITEMS TO LOCALSTORAGE
@@ -66,6 +67,8 @@ function removeItem(e) {
   if(e.target.parentElement.classList.contains('deleteBtn')) {
     e.target.parentElement.parentElement.remove();
   }
+  saveItemsToLocalStorage();
+  checkUI();
 }
 
 function removeAllItems () {
@@ -74,7 +77,20 @@ function removeAllItems () {
       itemList.firstChild.remove();
     }
   }
+  saveItemsToLocalStorage();
+  checkUI();
 }
+
+function checkUI () {
+  if(itemList.children.length === 0) {
+    clearAll.style.display = 'none';
+  } else {
+    clearAll.style.display = 'block';
+  }
+}
+
+
+checkUI();
 
 // Event Listeners
 itemForm.addEventListener("submit", addItem);

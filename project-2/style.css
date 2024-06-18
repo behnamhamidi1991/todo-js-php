@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  padding: 40px 10%;
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
+}
+
+header h1 {
+  color: rgb(47, 80, 223);
+}
+
+#form {
+  padding: 15px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#form input {
+  font-size: 14px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  width: 90%;
+  border-bottom: 1px solid black;
+}
+
+#form button {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: rgb(47, 80, 223);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#itemList li {
+  background-color: rgb(235, 235, 235);
+  padding: 10px 12px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  box-shadow: 2px 1px 1px rgba(0,0,0,0.2);
+}
+
+#itemList li button {
+  background-color: none;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+#itemList li button:hover {
+  color: red;
+}
+
+.clearAll {
+  margin: 10px;
+  border: none;
+  padding: 5px;
+  background-color: rgb(55, 96, 230);
+  color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
